@@ -60,11 +60,6 @@ provider:
 functions:
   hello:
     handler: handler.hello
-  
-  resizer:
-    handler: handler.resizer
-    environment:
-      BUCKET_NAME: ${self:custom.bucketName}
 
   converter:
     handler: handler.converter
