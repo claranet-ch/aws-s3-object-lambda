@@ -65,6 +65,11 @@ functions:
     handler: handler.resizer
     environment:
       BUCKET_NAME: ${self:custom.bucketName}
+
+  converter:
+    handler: handler.converter
+    environment:
+      BUCKET_NAME: ${self:custom.bucketName}
 #    The following are a few example events you can configure
 #    NOTE: Please make sure to change your handler code to work with those events
 #    Check the event documentation for details
