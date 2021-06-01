@@ -25,7 +25,6 @@ custom:
 provider:
   name: aws
   runtime: nodejs12.x
-
 # you can overwrite defaults here
   stage: dev
   region: eu-west-1
@@ -130,7 +129,7 @@ resources:
             - Actions: ["GetObject"]
               ContentTransformation:
                 AwsLambda:
-                  FunctionArn: !GetAtt ResizerLambdaFunction.Arn
+                  FunctionArn: !GetAtt ConverterLambdaFunction.Arn
 
   Outputs:
     BucketName:

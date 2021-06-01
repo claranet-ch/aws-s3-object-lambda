@@ -1,0 +1,19 @@
+{
+  "name": "aws-s3-object-lambda",
+  "version": "1.0.0",
+  "description": "Test AWS S3 Object Lambda functionalities",
+  "main": "handler.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Pasquale Panuccio",
+  "license": "ISC",
+  "dependencies": {
+    "aws-sdk": "^2.918.0",
+    "axios": "^0.21.1",
+    "xml2js": "^0.4.23"
+  }
+}

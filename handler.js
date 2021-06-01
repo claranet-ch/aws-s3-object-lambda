@@ -15,6 +15,7 @@ module.exports.converter = async (event, context) => {
 
   const { data: xml } = await axios.get(inputS3Url, { responseType: 'application/xml' })
 
+  let json;
   // convert XML to JSON
   xml2js.parseString(xml, (err, result) => {
     if (err) {
@@ -22,7 +23,7 @@ module.exports.converter = async (event, context) => {
     }
     // `result` is a JavaScript object
     // convert it to a JSON string
-    const json = JSON.stringify(result, null, 4);
+    json = JSON.stringify(result, null, 4);
 
   });
 
